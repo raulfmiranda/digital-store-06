@@ -1,1 +1,7 @@
-# digital-store-06
+# FRONT STORE 06
+
+## Instalação
+
+- `npm install`
+- `npm start`
+
