@@ -6,6 +6,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
+import "./styles.scss";
+
 const useStyles = makeStyles({
     card: {
         maxWidth: 292,
@@ -16,91 +18,79 @@ const useStyles = makeStyles({
 });
 
 const ProductGrid = () => {
-    const classes = useStyles();
+    const imgURL = "https://raw.githubusercontent.com/raulfmiranda/digital-store-06/main/src/components/TrendingProducts/assets/productimg.jpg";
 
     const products = [
         {
-            name: "A Product Name",
+            name: "K-Swiss V8 - Masculino",
             type: "Tênis",
             salesPrice: "R$ 100",
             price: "R$ 150",
-            imageURL: ""
+            imageURL: imgURL
         },
         {
-            name: "B Product Name",
+            name: "K-Swiss V8 - Masculino",
             type: "Tênis",
             salesPrice: "R$ 100",
             price: "R$ 150",
-            imageURL: ""
+            imageURL: imgURL
         },
         {
-            name: "C Product Name",
+            name: "K-Swiss V8 - Masculino",
             type: "Tênis",
             salesPrice: "R$ 100",
             price: "R$ 150",
-            imageURL: ""
+            imageURL: imgURL
         },
         {
-            name: "D Product Name",
+            name: "K-Swiss V8 - Masculino",
             type: "Tênis",
             salesPrice: "R$ 100",
             price: "R$ 150",
-            imageURL: ""
+            imageURL: imgURL
         },{
-            name: "E Product Name",
+            name: "K-Swiss V8 - Masculino",
             type: "Tênis",
             salesPrice: "R$ 100",
             price: "R$ 150",
-            imageURL: ""
+            imageURL: imgURL
         },
         {
-            name: "F Product Name",
+            name: "K-Swiss V8 - Masculino",
             type: "Tênis",
             salesPrice: "R$ 100",
             price: "R$ 150",
-            imageURL: ""
+            imageURL: imgURL
         },
         {
-            name: "G Product Name",
+            name: "K-Swiss V8 - Masculino",
             type: "Tênis",
             salesPrice: "R$ 100",
             price: "R$ 150",
-            imageURL: ""
+            imageURL: imgURL
         },
         {
-            name: "H Product Name",
+            name: "K-Swiss V8 - Masculino",
             type: "Tênis",
             salesPrice: "R$ 100",
             price: "R$ 150",
-            imageURL: ""
+            imageURL: imgURL
         }
     ];
 
     return (
-        <Grid container spacing={3}>
+        <Grid container justifyContent="center" spacing={2}>
             {products.map((product) => (
-                <Grid item xs={3} key={product.name}>
-                    <Card className={classes.card}>
-                        <CardMedia
-                            className={classes.media}
-                            image={product.imageURL}
-                            title={product.name}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                {product.name}
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                Type: {product.type}
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                Sales Price: ${product.salesPrice}
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                Price: ${product.price}
-                            </Typography>
-                        </CardContent>
-                    </Card>
+                <Grid item>
+                    <item>
+                    <img className='product-img' src={product.imageURL}/>
+                    <p className='product-type'>{product.type}</p>
+                    <p className='product-name'>{product.name}</p>
+                    <p className='product-prices'>
+                        <span className='product-price'>{product.price}</span>
+                        <span className='product-salesPrice'>{product.salesPrice}</span>
+                    </p>
+                    </item>
                 </Grid>
             ))}
         </Grid>
