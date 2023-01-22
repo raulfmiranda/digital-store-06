@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     card: {
-        maxWidth: 345,
+        maxWidth: 292,
     },
     media: {
         height: 140,
@@ -23,48 +23,56 @@ const ProductGrid = () => {
             name: "A Product Name",
             type: "Tênis",
             salesPrice: "R$ 100",
-            price: "R$ 150"
+            price: "R$ 150",
+            imageURL: ""
         },
         {
             name: "B Product Name",
             type: "Tênis",
             salesPrice: "R$ 100",
-            price: "R$ 150"
+            price: "R$ 150",
+            imageURL: ""
         },
         {
             name: "C Product Name",
             type: "Tênis",
             salesPrice: "R$ 100",
-            price: "R$ 150"
+            price: "R$ 150",
+            imageURL: ""
         },
         {
             name: "D Product Name",
             type: "Tênis",
             salesPrice: "R$ 100",
-            price: "R$ 150"
+            price: "R$ 150",
+            imageURL: ""
         },{
             name: "E Product Name",
             type: "Tênis",
             salesPrice: "R$ 100",
-            price: "R$ 150"
+            price: "R$ 150",
+            imageURL: ""
         },
         {
             name: "F Product Name",
             type: "Tênis",
             salesPrice: "R$ 100",
-            price: "R$ 150"
+            price: "R$ 150",
+            imageURL: ""
         },
         {
             name: "G Product Name",
             type: "Tênis",
             salesPrice: "R$ 100",
-            price: "R$ 150"
+            price: "R$ 150",
+            imageURL: ""
         },
         {
             name: "H Product Name",
             type: "Tênis",
             salesPrice: "R$ 100",
-            price: "R$ 150"
+            price: "R$ 150",
+            imageURL: ""
         }
     ];
 
