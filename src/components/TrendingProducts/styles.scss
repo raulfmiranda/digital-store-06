@@ -1,14 +1,55 @@
-.product-img {
-    max-width: 292px;
-    max-height: 321px;
+p {
+    margin: 0px;
 }
 
-.product-grid {
+.trending-products {
+    background-color: #E5E5E5;
+    width: 100%;
+    padding: 50px;
+}
+
+.product-img {
+    max-width: 292px;
+    max-height: 270px;
+}
+
+.product-promo {
+    background-color: #fff;
+    height: 51px;
+    width: 245px;
+    padding-top: 20px;
+}
+
+.product-promo-content {
+    background-color: #E7FF86;
+    display: inline;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.gridtop {
+    display: flex;
+    justify-content: space-between;
     max-width: 90%;
-    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.product-prices {
+    margin-bottom: 25px;
 }
 
 .product-type {
-    max-width: 35px;
-    max-height: 24px;
+    opacity: 0.5;
+    font-size: small;
+}
+
+.see-all {
+    opacity: 0.5;
+    font-size: smaller;
 }
