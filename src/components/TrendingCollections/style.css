@@ -35,3 +35,20 @@
     align-items: center;
     justify-content: center;
 }
+
+#container img:hover {
+    /* border: 1px solid #C92071; */
+    /* background: lightgray; */
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+    animation: rotation 3s infinite linear;
+    transform: rotate(360deg);
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
