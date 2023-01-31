@@ -1,22 +1,23 @@
 
 .trending-products {
     background-color: #E5E5E5;
-    width: 100%;
-    margin: auto;
+    
+    .trending-products-content {
+        width: 90%;
+        margin: auto;
+    }
     
     p {
         margin: 0px;
     }
 
     .product-img {
-        max-width: 292px;
-        max-height: 270px;
+        width: 100%;
     }
     
     .product-promo {
         background-color: #fff;
         height: 51px;
-        padding-top: 20px;
     }
     
     .product-promo-content {
