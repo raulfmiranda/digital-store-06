@@ -1,0 +1,37 @@
+#chuchu {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgrey;
+}
+
+.cor-fonte {
+    color: #474747;
+    font-weight: bold;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+.destaque h2 {
+    color: #474747;
+}
+
+.cachorro:hover {
+    color: #C92071;
+}
+
+#container {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
