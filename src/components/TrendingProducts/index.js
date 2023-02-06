@@ -84,7 +84,7 @@ const ProductGrid = () => {
                     {products.map((product) => (
                         <Grid item xs={12} sm={4} md={3}>
                             <Paper elevation={3}>
-                                <div className='product-promo'>
+                                <div className='product-promo pt-3'>
                                     {
                                         product.promo &&
                                         <p className='product-promo-content'>{product.promo}</p>
