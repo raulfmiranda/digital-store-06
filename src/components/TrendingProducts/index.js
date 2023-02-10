@@ -1,77 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import productimg from './assets/productimg.png';
 import "./styles.scss";
 
 const ProductGrid = () => {
-    const imgURL = "https://raw.githubusercontent.com/raulfmiranda/digital-store-06/main/src/components/TrendingProducts/assets/productimg.jpg";
+    const [products, setProducts] = useState([]);
 
-    const products = [
-        {
-            name: "K-Swiss V8 - Masculino",
-            type: "Tênis",
-            salesPrice: "$100",
-            price: "$200",
-            imageURL: imgURL,
-            promo: '30% OFF'
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            type: "Tênis",
-            salesPrice: "$100",
-            price: "$200",
-            imageURL: imgURL,
-            promo: '30% OFF'
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            type: "Tênis",
-            salesPrice: "$100",
-            price: "$200",
-            imageURL: imgURL,
-            promo: ''
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            type: "Tênis",
-            salesPrice: "$100",
-            price: "$200",
-            imageURL: imgURL,
-            promo: ''
-        },{
-            name: "K-Swiss V8 - Masculino",
-            type: "Tênis",
-            salesPrice: "$100",
-            price: "$200",
-            imageURL: imgURL,
-            promo: ''
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            type: "Tênis",
-            salesPrice: "$100",
-            price: "$200",
-            imageURL: imgURL,
-            promo: ''
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            type: "Tênis",
-            salesPrice: "$100",
-            price: "$200",
-            imageURL: imgURL,
-            promo: ''
-        },
-        {
-            name: "K-Swiss V8 - Masculino",
-            type: "Tênis",
-            salesPrice: "$100",
-            price: "$200",
-            imageURL: imgURL,
-            promo: ''
-        }
-    ];
+    useEffect(() => {
+        fetch('http://localhost:8000/products')
+            .then(response => response.json())
+            .then(response => setProducts(response));
+    }, []);
 
     return (
         <section className='trending-products'>
